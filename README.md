@@ -44,46 +44,15 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 Abra o arquivo `src/main/resources/application.properties` e configure as suas definições de conexão com o banco de dados.
 
 ## Configuração do Banco de Dados (Exemplo para H2 - ajuste para o seu banco de dados)
+```
 spring.datasource.url=jdbc:h2:file:./data/flixdb
 spring.datasource.username=sa
 spring.datasource.password=
 spring.datasource.driver-class-name=org.h2.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
+```
 **Importante:** Substitua a configuração de exemplo do H2 pelos detalhes específicos do seu banco de dados (por exemplo, para MySQL, PostgreSQL, etc.).
-
-3. **Compile o projeto:**
-
-* **Usando Maven:**
-
-  ```
-  mvn clean install
-  
-  ```
-
-* **Usando Gradle:**
-
-  ```
-  gradle build
-  
-  ```
-
-4. **Execute a aplicação:**
-
-* **Usando Maven:**
-
-  ```
-  mvn spring-boot:run
-  
-  ```
-
-* **Usando Gradle:**
-
-  ```
-  gradle bootRun
-  
-  ```
 
 A aplicação deve iniciar e estar acessível, geralmente em `http://localhost:8080` por padrão.
 
