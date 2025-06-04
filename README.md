@@ -30,7 +30,7 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 
 * **Java SDK 21**
 
-* **Maven** ou **Gradle** (dependendo da ferramenta de build do seu projeto)
+* **Maven** 
 
 * **Seu cliente/servidor de banco de dados escolhido** (se aplicável, por exemplo: MySQL Workbench, pgAdmin, etc.)
 
@@ -60,9 +60,9 @@ A aplicação deve iniciar e estar acessível, geralmente em `http://localhost:8
 
 Uma vez que a aplicação esteja em execução, você pode interagir com ela usando uma ferramenta como Postman, Insomnia ou curl.
 
-* **`GET /api/titulos`**: Recupera todas as séries e filmes catalogados.
+* **`GET /titulos`**: Recupera todas as séries e filmes catalogados.
 
-* **`POST /api/titulos`**: Adiciona uma nova série ou filme ao catálogo.
+* **`POST /titulos`**: Adiciona uma nova série ou filme ao catálogo.
 
 * **Corpo da Requisição (Exemplo JSON):**
 
@@ -78,15 +78,15 @@ Uma vez que a aplicação esteja em execução, você pode interagir com ela usa
  
  ```
 
-* **`GET /api/titulos/id`**: Recupera um título específico pelo seu ID.
+* **`GET /titulos/id`**: Recupera um título específico pelo seu ID.
 
-* **`PUT /api/titulos/id`**: Atualiza um título existente.
+* **`PUT /titulos/id`**: Atualiza um título existente.
 
 * **Corpo da Requisição (Exemplo JSON - similar ao POST):**
 
  ```
  {
-"nome": "A Origem",
+     "nome": "A Origem",
    "genero": "Ficção Científica",
    "tipo": "FILME",
    "anoLancamento": 2010,
