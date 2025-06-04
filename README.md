@@ -4,7 +4,7 @@ Flix é uma aplicação Java que permite catalogar suas séries e filmes favorit
 
 ## Funcionalidades
 
-* **Integração com API REST:** Busca detalhes de séries e filmes através de uma API RESTful.
+* **Integração com API REST:** Busca detalhes de séries e filmes através de uma API REST.
 
 * **Armazenamento em Banco de Dados Local:** Persiste as informações dos títulos em um banco de dados local.
 
@@ -68,12 +68,12 @@ Uma vez que a aplicação esteja em execução, você pode interagir com ela usa
 
  ```
  {
-   "nome": "A Origem",
-   "genero": "Ficção Científica",
-   "tipo": "FILME",
-   "anoLancamento": 2010,
-   "jaAssitiu": true
-   "avaliacao": 8.5
+     "nome": "A Origem",
+     "genero": "Ficção Científica",
+     "tipo": "FILME",
+     "anoLancamento": 2010,
+     "jaAssitiu": true,
+     "avaliacao": 8.5
  }
  
  ```
@@ -87,11 +87,11 @@ Uma vez que a aplicação esteja em execução, você pode interagir com ela usa
  ```
  {
      "nome": "A Origem",
-   "genero": "Ficção Científica",
-   "tipo": "FILME",
-   "anoLancamento": 2010,
-   "jaAssitiu": true
-   "avaliacao": 8.5
+     "genero": "Ficção Científica",
+     "tipo": "FILME",
+     "anoLancamento": 2010,
+     "jaAssitiu": true,
+     "avaliacao": 8.5
  }
  
  ```
